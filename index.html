@@ -25,6 +25,8 @@
 
         .rule-card { transition: 0.3s; border-left: 5px solid #16a34a; }
         .rule-card:hover { background-color: #f0fdf4; transform: translateX(10px); }
+        
+        .gallery-img { width: 100%; height: 250px; object-fit: cover; border-radius: 2rem; transition: 0.5s; }
     </style>
 </head>
 <body class="bg-slate-50">
@@ -42,12 +44,13 @@
 
         <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-white text-center px-6">
             <div data-aos="zoom-in">
-                <span class="bg-green-600 px-4 py-1 rounded-full text-xs font-bold uppercase mb-4 inline-block tracking-widest">Buka 24 Jam Setiap Hari</span>
-                <h1 class="text-5xl md:text-8xl font-black mb-2 tracking-tighter italic">GREEN TAKENGON</h1>
+                <span class="bg-green-600 px-4 py-1 rounded-full text-xs font-bold uppercase mb-4 inline-block">Buka 24 Jam Setiap Hari</span>
+                <h1 class="text-5xl md:text-8xl font-black mb-2 tracking-tighter italic uppercase">GREEN TAKENGON</h1>
                 <p class="text-2xl md:text-3xl font-bold mb-4 text-yellow-400 italic drop-shadow-lg">"Anda Nyaman Kami Senang"</p>
+                <p class="text-lg font-bold bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full mb-6 italic"><i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i> Hanya 5 Menit ke Danau Lut Tawar</p>
                 <div class="flex flex-wrap justify-center gap-4 mt-8">
-                    <a href="#kamar" class="bg-white text-green-800 px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-green-50 transition">Lihat Kamar</a>
-                    <a href="https://wa.me/6282274269502" class="bg-green-600 text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition">Pesan Sekarang</a>
+                    <a href="#kamar" class="bg-white text-green-800 px-10 py-4 rounded-2xl font-bold shadow-lg">Lihat Kamar</a>
+                    <a href="https://wa.me/6282274269502" class="bg-green-600 text-white px-10 py-4 rounded-2xl font-bold shadow-lg">Pesan Sekarang</a>
                 </div>
             </div>
         </div>
@@ -56,15 +59,13 @@
     <section class="py-10 bg-yellow-400">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between font-black italic text-slate-900">
             <h2 class="text-2xl uppercase"><i class="fas fa-car mr-2"></i> Jasa Rental Mobil 24 Jam</h2>
-            <p class="text-sm font-bold opacity-80 mt-2 md:mt-0">Melayani Dalam & Luar Kota</p>
-            <a href="https://wa.me/6282274269502" class="mt-4 md:mt-0 bg-black text-white px-8 py-2 rounded-full font-bold not-italic hover:bg-white hover:text-black transition">Hubungi Admin</a>
+            <a href="https://wa.me/6282274269502" class="mt-4 md:mt-0 bg-black text-white px-8 py-2 rounded-full font-bold not-italic">Hubungi Admin</a>
         </div>
     </section>
 
     <section id="kamar" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-4xl font-black italic uppercase text-slate-800 tracking-tight">Daftar Kamar</h2>
-            <p class="text-gray-500 mt-2 font-semibold">Tersedia Harga Spesial untuk Sewa Mingguan & Bulanan</p>
+            <h2 class="text-4xl font-black italic uppercase text-slate-800">Daftar Kamar</h2>
             <div class="h-1.5 w-20 bg-green-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -72,132 +73,128 @@
             
             <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up">
                 <div class="swiper swiper-kamar">
-                    <div class="swiper-wrapper bg-slate-200 text-gray-400 text-[10px] italic">
-                        <div class="swiper-slide flex items-center justify-center">Foto 1</div>
-                        <div class="swiper-slide flex items-center justify-center">Foto 2</div>
-                        <div class="swiper-slide flex items-center justify-center">Foto 3</div>
-                        <div class="swiper-slide flex items-center justify-center">Foto 4</div>
-                        <div class="swiper-slide flex items-center justify-center">Foto 5</div>
+                    <div class="swiper-wrapper bg-slate-200">
+                        <div class="swiper-slide flex items-center justify-center text-xs italic text-gray-400">Foto 1</div><div class="swiper-slide flex items-center justify-center text-xs italic text-gray-400">Foto 2</div><div class="swiper-slide flex items-center justify-center text-xs italic text-gray-400">Foto 3</div><div class="swiper-slide flex items-center justify-center text-xs italic text-gray-400">Foto 4</div><div class="swiper-slide flex items-center justify-center text-xs italic text-gray-400">Foto 5</div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col">
                     <h3 class="font-bold text-lg mb-1 italic">Ekonomi Standar</h3>
                     <p class="text-2xl font-black text-green-600 mb-4">80 RB <span class="text-xs text-gray-400 font-normal">/ Malam</span></p>
-                    <div class="text-[11px] space-y-2 text-gray-500 mb-4 border-t pt-4 flex-grow">
+                    <div class="text-[11px] space-y-2 text-gray-500 mb-6 border-t pt-4 flex-grow">
                         <p><i class="fas fa-users mr-2 text-green-500"></i> Kapasitas 2 Orang</p>
                         <p><i class="fas fa-bath mr-2 text-green-500"></i> Kamar Mandi Luar</p>
                         <p><i class="fas fa-pray mr-2 text-green-500 font-bold"></i> Tersedia Alat Sholat</p>
-                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Tersedia Mingguan/Bulanan!</p>
+                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Sedia Sewa Mingguan/Bulanan!</p>
                     </div>
-                    <a href="https://wa.me/6282274269502?text=Halo%20Admin,%20saya%20ingin%20tanya%20sewa%20kamar%2080rb%20(Malam/Minggu/Bulan)" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-green-600 transition">Pilih Kamar</a>
+                    <a href="https://wa.me/6282274269502" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold">Pilih Kamar</a>
                 </div>
             </div>
 
-            <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up">
                 <div class="swiper swiper-kamar">
-                    <div class="swiper-wrapper bg-slate-200 text-gray-400 text-[10px] italic">
-                        <div class="swiper-slide flex items-center justify-center">Foto 1</div><div class="swiper-slide flex items-center justify-center">Foto 2</div><div class="swiper-slide flex items-center justify-center">Foto 3</div><div class="swiper-slide flex items-center justify-center">Foto 4</div><div class="swiper-slide flex items-center justify-center">Foto 5</div>
+                    <div class="swiper-wrapper bg-slate-200">
+                        <div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col">
                     <h3 class="font-bold text-lg mb-1 italic">Ekonomi Plus</h3>
                     <p class="text-2xl font-black text-green-600 mb-4">100 RB <span class="text-xs text-gray-400 font-normal">/ Malam</span></p>
-                    <div class="text-[11px] space-y-2 text-gray-500 mb-4 border-t pt-4 flex-grow">
+                    <div class="text-[11px] space-y-2 text-gray-500 mb-6 border-t pt-4 flex-grow">
                         <p><i class="fas fa-users mr-2 text-green-500"></i> Kapasitas 2-3 Orang</p>
                         <p><i class="fas fa-bath mr-2 text-green-500"></i> Kamar Mandi Dalam</p>
                         <p><i class="fas fa-pray mr-2 text-green-500 font-bold"></i> Tersedia Alat Sholat</p>
-                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Tersedia Mingguan/Bulanan!</p>
+                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Sedia Sewa Mingguan/Bulanan!</p>
                     </div>
-                    <a href="https://wa.me/6282274269502?text=Halo%20Admin,%20saya%20ingin%20tanya%20sewa%20kamar%20100rb" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-green-600 transition">Pilih Kamar</a>
+                    <a href="https://wa.me/6282274269502" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold">Pilih Kamar</a>
                 </div>
             </div>
 
-            <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up">
                 <div class="swiper swiper-kamar">
-                    <div class="swiper-wrapper bg-slate-200 text-gray-400 text-[10px] italic">
-                        <div class="swiper-slide flex items-center justify-center">Foto 1-5</div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
+                    <div class="swiper-wrapper bg-slate-200">
+                        <div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col">
                     <h3 class="font-bold text-lg mb-1 uppercase">Standard Room</h3>
                     <p class="text-2xl font-black text-green-600 mb-4">125 RB <span class="text-xs text-gray-400 font-normal">/ Malam</span></p>
-                    <div class="text-[11px] space-y-2 text-gray-500 mb-4 border-t pt-4 flex-grow">
+                    <div class="text-[11px] space-y-2 text-gray-500 mb-6 border-t pt-4 flex-grow">
                         <p><i class="fas fa-users mr-2 text-green-500"></i> Kapasitas 4 Orang</p>
                         <p><i class="fas fa-bath mr-2 text-green-500"></i> Kamar Mandi Dalam</p>
                         <p><i class="fas fa-pray mr-2 text-green-500 font-bold"></i> Tersedia Alat Sholat</p>
-                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Tersedia Mingguan/Bulanan!</p>
+                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Sedia Sewa Mingguan/Bulanan!</p>
                     </div>
-                    <a href="https://wa.me/6282274269502?text=Halo%20Admin,%20saya%20ingin%20tanya%20sewa%20kamar%20125rb" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-green-600 transition">Pilih Kamar</a>
+                    <a href="https://wa.me/6282274269502" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold">Pilih Kamar</a>
                 </div>
             </div>
 
-            <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up">
                 <div class="swiper swiper-kamar">
-                    <div class="swiper-wrapper bg-slate-200 text-gray-400 text-[10px] italic">
-                        <div class="swiper-slide flex items-center justify-center">Foto 1-5</div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
+                    <div class="swiper-wrapper bg-slate-200">
+                        <div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col">
                     <h3 class="font-bold text-lg mb-1 uppercase">Superior Room</h3>
                     <p class="text-2xl font-black text-green-600 mb-4">150 RB <span class="text-xs text-gray-400 font-normal">/ Malam</span></p>
-                    <div class="text-[11px] space-y-2 text-gray-500 mb-4 border-t pt-4 flex-grow">
+                    <div class="text-[11px] space-y-2 text-gray-500 mb-6 border-t pt-4 flex-grow">
                         <p><i class="fas fa-users mr-2 text-green-500"></i> Kapasitas 4-5 Orang</p>
                         <p><i class="fas fa-shower mr-2 text-blue-500 font-bold"></i> Shower Mandi</p>
                         <p><i class="fas fa-pray mr-2 text-green-500 font-bold"></i> Tersedia Alat Sholat</p>
-                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Tersedia Mingguan/Bulanan!</p>
+                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Sedia Sewa Mingguan/Bulanan!</p>
                     </div>
-                    <a href="https://wa.me/6282274269502?text=Halo%20Admin,%20saya%20ingin%20tanya%20sewa%20kamar%20150rb" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-green-600 transition">Pilih Kamar</a>
+                    <a href="https://wa.me/6282274269502" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold">Pilih Kamar</a>
                 </div>
             </div>
 
             <div class="card-kamar rounded-[2rem] overflow-hidden" data-aos="fade-up">
                 <div class="swiper swiper-kamar">
-                    <div class="swiper-wrapper bg-slate-200 text-gray-400 text-[10px] italic">
-                        <div class="swiper-slide flex items-center justify-center">Foto 1-5</div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
+                    <div class="swiper-wrapper bg-slate-200">
+                        <div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col">
                     <h3 class="font-bold text-lg mb-1 uppercase">Deluxe Room</h3>
                     <p class="text-2xl font-black text-green-600 mb-4">180 RB <span class="text-xs text-gray-400 font-normal">/ Malam</span></p>
-                    <div class="text-[11px] space-y-2 text-gray-500 mb-4 border-t pt-4 flex-grow">
+                    <div class="text-[11px] space-y-2 text-gray-500 mb-6 border-t pt-4 flex-grow">
                         <p><i class="fas fa-users mr-2 text-green-500"></i> Kapasitas 4-6 Orang</p>
                         <p><i class="fas fa-shower mr-2 text-blue-500 font-bold"></i> Shower & Air Hangat</p>
                         <p><i class="fas fa-pray mr-2 text-green-500 font-bold"></i> Tersedia Alat Sholat</p>
-                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Tersedia Mingguan/Bulanan!</p>
+                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Sedia Sewa Mingguan/Bulanan!</p>
                     </div>
-                    <a href="https://wa.me/6282274269502?text=Halo%20Admin,%20saya%20ingin%20tanya%20sewa%20kamar%20180rb" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-green-600 transition">Pilih Kamar</a>
+                    <a href="https://wa.me/6282274269502" class="block text-center py-3 bg-slate-900 text-white rounded-xl font-bold">Pilih Kamar</a>
                 </div>
             </div>
 
-            <div class="card-kamar rounded-[2rem] border-2 border-yellow-400 overflow-hidden" data-aos="fade-up">
+            <div class="card-kamar rounded-[2rem] border-2 border-yellow-400 overflow-hidden shadow-sm" data-aos="fade-up">
                 <div class="swiper swiper-kamar">
-                    <div class="swiper-wrapper bg-slate-200 text-gray-400 text-[10px] italic">
-                        <div class="swiper-slide flex items-center justify-center">Foto 1-5</div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
+                    <div class="swiper-wrapper bg-slate-200">
+                        <div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="p-6 flex-grow flex flex-col">
                     <h3 class="font-bold text-lg mb-1 text-green-700 uppercase">Executive Room</h3>
                     <p class="text-2xl font-black text-green-600 mb-4">200 RB <span class="text-xs text-gray-400 font-normal">/ Malam</span></p>
-                    <div class="text-[11px] space-y-2 text-gray-500 mb-4 border-t pt-4 flex-grow">
+                    <div class="text-[11px] space-y-2 text-gray-500 mb-6 border-t pt-4 flex-grow">
                         <p><i class="fas fa-users mr-2 text-green-500"></i> Kapasitas Ekstra Luas</p>
                         <p><i class="fas fa-shower mr-2 text-blue-500 font-bold"></i> Shower Premium</p>
                         <p><i class="fas fa-pray mr-2 text-green-500 font-bold"></i> Tersedia Alat Sholat</p>
-                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Tersedia Mingguan/Bulanan!</p>
+                        <p class="mt-4 pt-2 border-t border-dashed font-bold text-green-700 italic">Sedia Sewa Mingguan/Bulanan!</p>
                     </div>
-                    <a href="https://wa.me/6282274269502?text=Halo%20Admin,%20saya%20ingin%20tanya%20sewa%20kamar%20200rb" class="block text-center py-3 bg-yellow-400 text-white rounded-xl font-bold hover:bg-black transition">Paling Laris</a>
+                    <a href="https://wa.me/6282274269502" class="block text-center py-3 bg-yellow-400 text-white rounded-xl font-bold hover:bg-black transition uppercase">Best Seller</a>
                 </div>
             </div>
 
             <div class="card-kamar rounded-[2.5rem] border-2 border-green-600 col-span-1 md:col-span-2 overflow-hidden shadow-lg" data-aos="fade-up">
                 <div class="swiper swiper-kamar">
-                    <div class="swiper-wrapper bg-slate-200 text-gray-400 text-[10px] italic">
-                        <div class="swiper-slide flex items-center justify-center">Foto 1-5</div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
+                    <div class="swiper-wrapper bg-slate-200">
+                        <div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -208,19 +205,66 @@
                         <p><i class="fas fa-users mr-2 text-green-500 font-bold"></i> Kapasitas 6-8 Orang</p>
                         <p><i class="fas fa-shower mr-2 text-blue-500 font-bold"></i> Premium Shower</p>
                         <p><i class="fas fa-pray mr-2 text-green-500 font-bold"></i> Alat Sholat Lengkap</p>
-                        <p><i class="fas fa-calendar-check mr-2 text-green-500 font-bold"></i> Sewa Mingguan/Bulanan OK</p>
+                        <p><i class="fas fa-parking mr-2 text-green-500"></i> Parkir Prioritas</p>
                     </div>
-                    <a href="https://wa.me/6282274269502?text=Halo%20Admin,%20saya%20ingin%20tanya%20sewa%20Family%20VIP%20300rb" class="block text-center py-4 bg-green-600 text-white rounded-2xl font-bold shadow-xl hover:bg-black transition">Booking Unit VIP</a>
+                    <p class="font-bold text-green-700 italic mb-4">Sedia Sewa Mingguan & Bulanan - Hubungi Admin</p>
+                    <a href="https://wa.me/6282274269502" class="block text-center py-4 bg-green-600 text-white rounded-2xl font-bold shadow-xl hover:bg-black transition uppercase">Booking Unit VIP</a>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="py-20 bg-slate-100 border-t border-b">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-black italic uppercase text-slate-800">Pesona Takengon</h2>
+                <p class="text-gray-500 mt-2 font-semibold italic">Hanya 5 Menit ke Danau Lut Tawar dari Lokasi Kami</p>
+                <div class="h-1.5 w-20 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800" class="gallery-img shadow-xl"></div>
+                <div data-aos="zoom-in" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=800" class="gallery-img shadow-xl"></div>
+                <div data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800" class="gallery-img shadow-xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-black italic uppercase text-slate-800">Ulasan Tamu</h2>
+                    <p class="text-lg text-gray-500 italic mt-2">Pilihan Utama Kenyamanan di Takengon</p>
+                </div>
+                <div class="bg-yellow-400 p-8 rounded-[2.5rem] text-center shadow-lg" data-aos="zoom-in">
+                    <p class="text-5xl font-black text-slate-900">5.0</p>
+                    <div class="text-orange-600 text-xl mb-1 italic">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-xs font-bold uppercase text-slate-800">Rating Tertinggi</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-[2rem] border" data-aos="fade-up">
+                    <p class="italic text-gray-600 mb-6 text-sm">"Tempat sangat bersih, hanya 5 menit ke danau. Sangat puas dengan suasananya yang tenang!"</p>
+                    <p class="font-bold text-slate-800 uppercase text-xs">— Cut Anisa</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-[2rem] border" data-aos="fade-up" data-aos-delay="100">
+                    <p class="italic text-gray-600 mb-6 text-sm">"Sangat terbantu ada alat sholat. Pelayanan admin 24 jam sangat ramah dan responsif."</p>
+                    <p class="font-bold text-slate-800 uppercase text-xs">— Ahmad Yani</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-[2rem] border" data-aos="fade-up" data-aos-delay="200">
+                    <p class="italic text-gray-600 mb-6 text-sm">"Harga terbaik untuk sewa bulanan. Rental mobilnya juga ready terus dan unitnya prima."</p>
+                    <p class="font-bold text-slate-800 uppercase text-xs">— Teuku Rian</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="py-24 bg-slate-900 text-white">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
             <div data-aos="fade-right">
-                <h2 class="text-4xl font-black italic mb-6 text-green-400 tracking-tighter uppercase">Filosofi Kami</h2>
+                <h2 class="text-4xl font-black italic mb-6 text-green-400 uppercase tracking-tighter">Filosofi Kami</h2>
                 <p class="text-xl leading-relaxed text-slate-400 italic mb-8">
                     "Memberikan kenyamanan seperti di rumah sendiri dalam bingkai syariat, menjaga ketenangan alam Takengon tetap terasa di setiap sudut istirahat Anda."
                 </p>
@@ -231,27 +275,18 @@
 
             <div class="bg-white text-slate-900 p-10 rounded-[3rem] shadow-2xl" data-aos="fade-left">
                 <h3 class="text-2xl font-black mb-6 italic border-b-4 border-green-500 pb-2 inline-block">Tata Tertib</h3>
-                <div class="space-y-4 text-sm">
+                <div class="space-y-4">
                     <div class="rule-card p-4 bg-slate-50 rounded-2xl flex gap-4 items-start">
                         <i class="fas fa-moon text-green-600 mt-1"></i>
-                        <div>
-                            <p class="font-bold">Himbauan Jam Istirahat</p>
-                            <p class="text-[10px] text-gray-500 italic uppercase">Berhenti aktivitas luar jam 02:00 pagi demi kenyamanan tamu lain</p>
-                        </div>
+                        <div><p class="font-bold text-sm">Himbauan Jam Istirahat</p><p class="text-[10px] text-gray-500 italic uppercase">Berhenti aktivitas luar jam 02:00 pagi</p></div>
                     </div>
                     <div class="rule-card p-4 bg-slate-50 rounded-2xl flex gap-4 items-start">
                         <i class="fas fa-ring text-green-600 mt-1"></i>
-                        <div>
-                            <p class="font-bold">Verifikasi Pasangan</p>
-                            <p class="text-[10px] text-gray-500 italic uppercase">Wajib menunjukkan Buku Nikah atau identitas pasangan resmi</p>
-                        </div>
+                        <div><p class="font-bold text-sm">Verifikasi Pasangan</p><p class="text-[10px] text-gray-500 italic uppercase">Wajib menunjukkan Buku Nikah</p></div>
                     </div>
                     <div class="rule-card p-4 bg-slate-50 rounded-2xl flex gap-4 items-start border-l-red-500">
                         <i class="fas fa-ban text-red-600 mt-1"></i>
-                        <div>
-                            <p class="font-bold">Larangan Keras</p>
-                            <p class="text-[10px] text-gray-500 italic uppercase">Dilarang membawa Miras, Narkoba, & Senjata Tajam</p>
-                        </div>
+                        <div><p class="font-bold text-sm">Larangan Keras</p><p class="text-[10px] text-gray-500 italic uppercase">Tanpa Miras, Narkoba, & Senjata Tajam</p></div>
                     </div>
                 </div>
             </div>
@@ -275,14 +310,12 @@
                     </a>
                 </div>
             </div>
-
             <div class="rounded-[3rem] overflow-hidden shadow-2xl h-[400px] border-[12px] border-slate-900" data-aos="fade-left">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30571.134756109557!2d96.81590907431644!3d4.641650199999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3038ed0d77b909d7%3A0x2eeee61b2f5841b2!2sGREEN%20TAKENGON%2080-300Rb%2Fmalam!5e1!3m2!1sid!2sid!4v1774549849751!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-
         <div class="max-w-6xl mx-auto border-t border-white/10 pt-10 text-center">
-            <p class="text-[10px] uppercase tracking-[0.6em] font-bold opacity-30">© 2026 GREEN TAKENGON • ALL RIGHTS RESERVED</p>
+            <p class="text-[10px] uppercase tracking-[0.6em] font-bold opacity-30 italic">© 2026 GREEN TAKENGON • ALL RIGHTS RESERVED</p>
         </div>
     </footer>
 
